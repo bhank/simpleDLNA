@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -123,7 +123,7 @@ namespace NMaier.SimpleDlna
 
               var friendlyName = "sdlna";
 
-              if (options.Seperate) {
+              if (options.Separate) {
                 foreach (var d in options.Directories) {
                   server.InfoFormat("Mounting FileServer for {0}", d.FullName);
                   var fs = SetupFileServer(
